@@ -1,10 +1,10 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.10
 import PackageDescription
 
 let package = Package(
     name: "NYTPhotoViewer",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -13,7 +13,7 @@ let package = Package(
             ),
     ],
     dependencies: [
-        .package(url: "https://github.com/pinterest/PINRemoteImage.git", from: "3.0.1")
+        .package(url: "https://github.com/pinterest/PINRemoteImage.git", exact: "3.0.3")
     ],
     targets: [
         .target(
